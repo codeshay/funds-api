@@ -1,0 +1,39 @@
+<div class="create-container">
+    <h1>Mutal Fund Creation Form</h1>
+
+        <div class="data-line">
+            <label for="name">Name: </label>
+            <input [(ngModel)]="newFund.name" type="text"><br>
+        </div>
+        <div class="data-line">
+            <label for="manager">Fund Manager: </label>
+            <input [(ngModel)]="newFund.manager" type="text"><br>
+        </div>
+        <div class="data-line">
+            <label for="birthdate">D/O/B: </label>
+            <input [(ngModel)]="newFund.birthdate" type="text"><br>
+        </div>
+        <div class="data-line">
+            <label for="balance">Balance: </label>
+            <input [(ngModel)]="newFund.balance" type="number"><br>
+        </div>
+        <div class="data-line">
+            <label for="interest">Interest Rate: </label>
+            <input [(ngModel)]="newFund.interest" type="number"><br>
+        </div>
+        <div class="data-line">
+            <label for="term">Term: </label>
+            <input [(ngModel)]="newFund.term" type="number"><br>
+        </div>
+        <div class="data-line">
+            <label for="tax">Tax Rate: </label>
+            <input [(ngModel)]="newFund.tax" type= "number"><br>
+        </div>
+        <div class="data-line">
+            <label for="fee">Annual Fee: </label>
+            <input [(ngModel)]="newFund.fees" type="number"><br>
+        </div>
+        <div class="submit">
+            <button (click)="goCreateFund()">Submit</button>
+        </div>
+</div>

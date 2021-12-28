@@ -1,0 +1,40 @@
+.create-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: purple;
+    height: 90vh;
+    padding: 30px;
+}
+
+// h1 {
+
+// }
+
+form {
+    font-size: 1.5em;
+    border: 4px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color: rgb(128, 128, 128);
+}
+
+.data-line {
+    padding: 5px;
+}
+
+.submit {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    flex-direction: column;
+    align-items: center; 
+}
+
+button {
+    font-size: 1.3em;
+    color: white;
+    background-color:  rgba(52, 89, 144);
+    border-radius: 8px;
+    &:hover {
+        background-color: green;
+    }
+}

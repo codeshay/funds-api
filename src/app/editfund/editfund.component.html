@@ -1,0 +1,38 @@
+<div>
+    <p [(ngModel)]="fund.id">ID: {{fund.id}}</p>   
+</div>
+
+<div>
+    NAME: <input [(ngModel)]="fund.name" value="{{fund.name}}" ngDefaultControl/>
+</div>
+
+<div>
+    FUND MANAGER: <input [(ngModel)]="fund.manager" value="{{fund.manager}}"/>
+</div>
+
+<div>
+    D/O/B: <input [(ngModel)]="fund.birthdate" value="{{fund.birthdate}}"/>
+</div>
+
+<div>
+    BALANCE: <input [(ngModel)]="fund.balance" value="{{fund.balance}}" />
+</div>
+
+<div>
+    INTEREST RATE: <input [(ngModel)]="fund.interest" value="{{fund.interest}}"/> 
+</div>
+
+<div>
+    TERM: <input [(ngModel)]="fund.term" value="{{fund.term}}"/>
+</div>
+
+<div>
+    TAX RATE: <input [(ngModel)]="fund.tax" value="{{fund.tax}}" />
+</div>
+
+<div>
+    ANNUAL FEE: <input [(ngModel)]="fund.fees" value="{{fund.fees}}" />
+</div>
+
+<button (click)="update()">Update</button>
+

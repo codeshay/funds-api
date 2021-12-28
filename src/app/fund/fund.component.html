@@ -1,0 +1,55 @@
+<div class="fund-container">
+    <p>Click to edit fields</p>
+    <table class="table-container">
+        <tr class="header">
+            <th>Account ID</th>
+            <th>Name</th>
+            <th>Funds Manager</th>
+            <th>D/O/B</th>
+            <th>Balance</th>
+            <th>Interest Rate</th>
+            <th>Term</th>
+            <th>Tax Rate</th>
+            <th>Annual Fee</th>
+            <th>Delete Account</th>
+        </tr>
+        <tr>
+            <td>{{fund.id}}</td>
+            <td>{{fund.name}}</td>
+            <td>{{fund.manager}}</td>
+            <td>{{fund.birthdate}}</td>
+            <td>${{fund.balance}}</td>
+            <td>{{fund.interest}}%</td>
+            <td>{{fund.term}} mo</td>
+            <td>{{fund.tax}}%</td>
+            <td>${{fund.fees}}</td>
+            <td>
+                <button (click)="goDeleteFund()">X</button>
+            </td>
+        </tr>
+    </table>
+    
+    <!-- <div *ngFor="let fund of tempFundList, let i = index">
+        <div (click)="makeEditable(i)" *ngIf="fund[2]==false"> -->
+            <!-- {{i}} ====> {{fund[0]}} : {{fund[1]}}
+            {{fund[0]}} : {{fund[1]}}
+        </div>
+        <div  *ngIf="fund[2]==true">
+            {{fund[0]}} : <input (blur)="makeStatic(i)" [(ngModel)]= "fund[1]"/>
+        </div>
+
+        <div  *ngIf="fund[2]==true && fund[0] !== ">
+            {{fund[0]}} : <input (blur)="makeStatic(i)" [(ngModel)]= "fund[1]"/>
+        </div>
+        <div  *ngIf="fund[2]==true">
+            {{fund[0]}} : <input (blur)="makeStatic(i)" [(ngModel)]= "fund[1]"/>
+        </div>
+       
+        <hr />
+    </div> -->
+    <button (click)="update()">Update Mutual Fund</button>
+    <!-- <button routerLink="/funds/:id/edit">Update Mutual Fund</button> -->
+    <!-- <button [routerLink]="['/funds', fund.id, '/edit']">Update Mutual Fund</button> -->
+</div>
+
+<!-- Today's message: {{message}} -->

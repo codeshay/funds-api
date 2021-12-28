@@ -1,0 +1,14 @@
+<div class="funds-container">
+    <h1>Mutual Funds</h1>
+
+    <div  *ngFor="let fund of funds">
+        <a class="accounts" [routerLink]="['/funds', fund.id]">{{fund.name}}</a>
+        <!-- <app-fund [fund]="fund" [message]="mensaje"></app-fund> -->
+        <!-- <app-fund></app-fund> -->
+    </div>
+
+    <div>
+        <button routerLink="/createfund">Create New Account</button>
+    </div>
+</div>
+

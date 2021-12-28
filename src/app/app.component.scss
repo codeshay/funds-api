@@ -1,0 +1,32 @@
+$bankblue: rgb(52, 89, 144);
+
+.container {
+    display: flex;
+    background-color: gold;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: $bankblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-tag {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color:$bankblue;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
